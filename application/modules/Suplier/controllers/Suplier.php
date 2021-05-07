@@ -15,7 +15,7 @@ class Suplier extends CI_Controller
         }
     }
     function index(){
-        $data['judul'] = "Suplier";
+        $data['judul'] = "Halaman Suplier";
         $data['suplier'] = $this->M_suplier->tampil('suplier');
         $this->load->view('Templates/Header', $data);
         $this->load->view('Templates/Sidebar');

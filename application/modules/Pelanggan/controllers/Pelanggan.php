@@ -9,7 +9,7 @@ class Pelanggan extends CI_Controller
         }
     }
     function index(){
-        $data['judul'] = "Pelanggan";
+        $data['judul'] = "Halaman Pelanggan";
         $data['pelanggan'] = $this->M_pelanggan->get_data('pelanggan')->result();
         $this->load->view('Templates/Header', $data);
         $this->load->view('Templates/Sidebar');

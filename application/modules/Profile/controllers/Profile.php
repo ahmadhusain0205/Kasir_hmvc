@@ -11,7 +11,7 @@ class Profile extends CI_Controller
         } else {
             $data['profile'] = $this->M_profile->get_data('petugas')->result();
         }
-        $data['judul'] = 'My Profile';
+        $data['judul'] = 'Halaman Profile';
         $this->load->view('Templates/Header', $data);
         $this->load->view('Templates/Sidebar', $data);
         $this->load->view('Templates/Topbar', $data);
